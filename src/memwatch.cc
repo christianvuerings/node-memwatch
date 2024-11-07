@@ -160,7 +160,6 @@ NAN_GC_CALLBACK(memwatch::after_gc) {
             s_stats.gcProcessWeakCallbacksTime += gcTime;
             return;
 
-        case kGCTypeMinorMarkCompact:
         case kGCTypeMarkSweepCompact:
         case kGCTypeAll:
             break;
