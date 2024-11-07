@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "author": "Lloyd Hilaiel (http://lloyd.io)",
   "engines": {
-    "node": ">= 10.0"
+    "node": ">= 18"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,10 @@
   },
   "scripts": {
     "install": "node-gyp rebuild",
-    "test": "mocha tests --reporter spec"
+    "test": "vitest"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "should": "^8.3.1"
+    "vitest": "^2.1.4"
   },
   "contributors": [
     "Jed Parsons (@jedp)",
@@ -34,7 +33,7 @@
   ],
   "dependencies": {
     "bindings": "^1.5.0",
-    "nan": "^2.14.1"
+    "nan": "^2.22.0"
   },
   "publishConfig": {
     "access": "public"
