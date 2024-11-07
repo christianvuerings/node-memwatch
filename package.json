@@ -21,10 +21,11 @@
   },
   "scripts": {
     "install": "node-gyp rebuild",
-    "test": "vitest"
+    "test": "mocha tests --reporter spec"
   },
   "devDependencies": {
-    "vitest": "^2.1.4"
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
   },
   "contributors": [
     "Jed Parsons (@jedp)",
